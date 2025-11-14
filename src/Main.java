@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main (String[] args) {
@@ -30,7 +32,47 @@ public class Main {
         System.out.println(intArr[0]);
         System.out.println(intArr2[1]);
 
-        // Prox aula: ArrayList | https://www.youtube.com/watch?v=nODe5lFcGpg&list=PLNCSWIsR6ADI_wMAx9F-Iu8Hs9HHxj4sb
+        // ArrayList
+
+        ArrayList<String> hobbies = new ArrayList<>();
+
+        hobbies.add("Ouvir música"); // Adiciona o valor na lista
+        hobbies.add("Dormir");
+        hobbies.add("Aprender Java");
+
+        hobbies.remove(0); // Remove o valor da lista
+
+        System.out.println(hobbies.get(0));
+
+        // Loops
+
+        // For
+
+        for (int index = 0; index < hobbies.size(); index++) { // com ArrayList usa .size(), .get()
+            System.out.println("Hobbie " + (index + 1) + ": " + hobbies.get(index));
+        }
+
+        for (String hobbie : hobbies) { // funciona para ArrayList e Array normal
+            System.out.println("Hobbie do Mateus" + ": " + hobbie);
+        }
+
+        // While
+
+        int counter = 0;
+
+        while (counter < 5) {
+            System.out.println("Condição ainda não atendida");
+            counter++;
+        }
+
+        // Casting: transformação de tipos do VALOR
+        double result = 10.0;
+        int resultInt = (int) result; // double -> int
+
+        String age = "19";
+        int ageInt = Integer.parseInt(age);
+
+        String backToStr = String.valueOf(ageInt);
     }
 }
 
