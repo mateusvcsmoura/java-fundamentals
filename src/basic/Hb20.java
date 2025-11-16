@@ -1,3 +1,5 @@
+package basic;
+
 public class Hb20 implements Car{
     private final int speedLimit = 220;
     private int currentSpeed;
@@ -34,7 +36,7 @@ public class Hb20 implements Car{
 
     private void decreaseSpeed () {
         if (this.currentSpeed <= 0) {
-            System.out.println("The Car is already at 0km/h");
+            System.out.println("The basic.Car is already at 0km/h");
             return;
         }
 
@@ -43,7 +45,7 @@ public class Hb20 implements Car{
 
     public void showCarInfo () {
         System.out.println("===================");
-        System.out.println("Car Model: HB20");
+        System.out.println("basic.Car Model: HB20");
         System.out.println("Current Speed: " + this.currentSpeed + " km");
         System.out.println("Speed Limit: " + this.speedLimit + " km");
         System.out.println("===================");

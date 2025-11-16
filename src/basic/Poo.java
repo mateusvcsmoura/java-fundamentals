@@ -1,3 +1,5 @@
+package basic;
+
 public class Poo {
     public static void main (String[] args) {
         Car gtr = new Gtr();

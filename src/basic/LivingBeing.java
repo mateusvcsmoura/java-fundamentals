@@ -1,3 +1,5 @@
+package basic;
+
 public class LivingBeing { // Não pode implementar (usa extend). Podemos colocar métodos
     protected int age;
 
